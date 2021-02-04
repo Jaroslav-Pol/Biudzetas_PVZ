@@ -7,7 +7,7 @@ class Biudzetas:
         self.zurnalas = []
 
     def prideti_pajamu_irasa(self, nauja_suma, naujas_siuntejas="Darbovete", naujas_tipas='Atlyginimas'):
-        irasas = PajamuIrasas( nauja_suma, naujas_siuntejas, naujas_tipas)
+        irasas = PajamuIrasas(nauja_suma, naujas_siuntejas, naujas_tipas)
         self.zurnalas.append(irasas)
 
     def prideti_islaidu_irasa(self, nauja_suma, naujas_apmokejimo_budas="Kortele", nauja_preke_paslauga='Maistas'):
