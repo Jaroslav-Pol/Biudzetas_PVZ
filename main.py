@@ -9,9 +9,9 @@ biudzetas = Biudzetas()
 # parodyti_ataskaita()
 # gauti_balansa()
 
-biudzetas.prideti_pajamu_irasa(25)
-biudzetas.prideti_pajamu_irasa(500)
-biudzetas.prideti_islaidu_irasa(200)
+biudzetas.prideti_pajamu_irasa(25, 'Kazkas', "Skola")
+biudzetas.prideti_pajamu_irasa(500, naujas_tipas="Avansas")
+biudzetas.prideti_islaidu_irasa(200, "Grynais", "Batonas")
 biudzetas.parodyti_ataskaita()
 biudzetas.gauti_balansa()
 

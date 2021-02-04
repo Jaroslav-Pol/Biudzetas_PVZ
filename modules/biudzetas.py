@@ -6,12 +6,12 @@ class Biudzetas:
     def __init__(self):
         self.zurnalas = []
 
-    def prideti_pajamu_irasa(self, nauja_suma):
-        irasas = PajamuIrasas( nauja_suma)
+    def prideti_pajamu_irasa(self, nauja_suma, naujas_siuntejas="Darbovete", naujas_tipas='Atlyginimas'):
+        irasas = PajamuIrasas( nauja_suma, naujas_siuntejas, naujas_tipas)
         self.zurnalas.append(irasas)
 
-    def prideti_islaidu_irasa(self, nauja_suma):
-        irasas = IslaiduIrasas(nauja_suma)
+    def prideti_islaidu_irasa(self, nauja_suma, naujas_apmokejimo_budas="Kortele", nauja_preke_paslauga='Maistas'):
+        irasas = IslaiduIrasas(nauja_suma, naujas_apmokejimo_budas, nauja_preke_paslauga)
         self.zurnalas.append(irasas)
 
     def parodyti_ataskaita(self):
