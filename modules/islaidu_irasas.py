@@ -1,5 +1,5 @@
 
 from modules.irasas import Irasas
 
-class PajamuIrasas(Irasas):
+class IslaiduIrasas(Irasas):
     pass
