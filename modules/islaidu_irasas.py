@@ -9,4 +9,4 @@ class IslaiduIrasas(Irasas):
         self.preke_paslauga = preke_paslauga
 
     def __str__(self): #pakeiciam str kitaip nei tevinei klasei
-        return f"Islaidos: {self.suma}, apmokejimo budas: {self.apmokejimo_budas}, igyta preke/paslauga {self.preke_paslauga}"
+        return f"Islaidos: {self.suma}, apmokejimo budas: {self.apmokejimo_budas}, igyta preke/paslauga: {self.preke_paslauga}"
