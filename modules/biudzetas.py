@@ -1,4 +1,5 @@
-from modules.irasas import Irasas
+from modules.pajamu_irasas import PajamuIrasas
+from modules.islaidu_irasas import IslaiduIrasas
 
 
 class Biudzetas:
@@ -6,11 +7,11 @@ class Biudzetas:
         self.zurnalas = []
 
     def prideti_pajamu_irasa(self, nauja_suma):
-        irasas = Irasas('Pajamos', nauja_suma)
+        irasas = PajamuIrasas( nauja_suma)
         self.zurnalas.append(irasas)
 
     def prideti_islaidu_irasa(self, nauja_suma):
-        irasas = Irasas('Islaidos', nauja_suma)
+        irasas = IslaiduIrasas(nauja_suma)
         self.zurnalas.append(irasas)
 
     def parodyti_ataskaita(self):
@@ -22,8 +23,8 @@ class Biudzetas:
         print('Balansas: ')
         balansas = 0
         for irasas in self.zurnalas:
-            if irasas.tipas == 'Pajamos':
+            if type(irasas) is PajamuIrasas:
                 balansas += irasas.suma
-            if irasas.tipas == "Islaidos":
+            if type(irasas) is IslaiduIrasas:
                 balansas -= irasas.suma
         print(balansas)

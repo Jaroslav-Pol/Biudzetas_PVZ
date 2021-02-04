@@ -9,13 +9,12 @@ biudzetas = Biudzetas()
 # parodyti_ataskaita()
 # gauti_balansa()
 
-# biudzetas.prideti_pajamu_irasa(25)
-# biudzetas.prideti_pajamu_irasa(500)
-# biudzetas.prideti_islaidu_irasa(200)
-# biudzetas.parodyti_ataskaita()
-# biudzetas.gauti_balansa()
-irasas1 = PajamuIrasas(200)
-print(irasas1)
+biudzetas.prideti_pajamu_irasa(25)
+biudzetas.prideti_pajamu_irasa(500)
+biudzetas.prideti_islaidu_irasa(200)
+biudzetas.parodyti_ataskaita()
+biudzetas.gauti_balansa()
+
 
 
 
